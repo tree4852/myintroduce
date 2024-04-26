@@ -17,12 +17,8 @@
         position: fixed;
         right: 0;
         width: 80px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        top: 0;
-        bottom: 0;
-        
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     li{list-style: none;}
@@ -33,28 +29,27 @@
         width: 200px;
         background-color: red;
     }
-     #quick li a{
+    #quick li a{
         display: flex;
-        
+        transition: 0.5s;        
      }
 
     #quick li:hover a{
-        margin-left: -120px;
-        transition: 2s;}
+        transform: translateX(-100%);
+    }
 
-    #quick li:nth-child(1) a{ background-color: black;}
+     #quick li:nth-child(1) a{ background-color: green;}
 
     #quick li:nth-child(2) a{ background-color: yellow;}
-    
-    #quick li:nth-child(3) a{ background-color: black;}
+
+    #quick li:nth-child(3) a{ background-color: green;}
 
     #quick li:nth-child(4) a{ background-color: yellow;}
 
-    #quick li:nth-child(5) a{ background-color: red;}
-    
+    #quick li:nth-child(5) a{ background-color: green;}
+        
     #quick li i{
-        width: 80px;
-        display: inline-block;
+        width: 80px;       
     }
     
     .bg-drak{background-color: black;}
@@ -67,9 +62,10 @@
      <aside id="quick">
         <ul>
             <li><a href="#"><i class="bi bi-github "></i><strong>깃</strong></a></li>
-            <li></li><a href="#"><i class="bi bi-youtube "></i><strong>유튜브</strong></a></li>
+
+            <li><a href="#"><i class="bi bi-youtube "></i><strong>유튜브</strong></a></li>
             <li><a href="#"><i class="bi bi-instagram "></i><strong>인스타그램</strong></a></li>
-            <li></li><a href="#"><i class="bi bi-facebook "></i><strong>페이스북</strong></a></li>
+            <li><a href="#"><i class="bi bi-facebook "></i><strong>페이스북</strong></a></li>
             <li><a href="#"><i class="bi bi-arrow-up-circle "></i><strong>위로</strong></a></li>
         </ul>
      </aside>
